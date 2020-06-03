@@ -45,7 +45,7 @@ func main() {
 		// Add car model
 		for _, carModel := range carMake.Models {
 			log.Println("Adding: ", carModel.ID, carMake.Name, "", carMake.ID)
-			_, err := repo.CreateCarModel(carModel.ID, carMake.Name, "", carMake.ID)
+			_, err := repo.CreateCarModel(carModel.ID, carModel.Name, "", carMake.ID)
 			if err != nil {
 				log.Printf("Could not add car model: %v", err)
 			}
